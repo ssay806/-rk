@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random YouTube Music Redirect</title>
+    <script>
+        function redirectToRandomSong() {
+            const songs = [
+                'https://music.youtube.com/watch?v=KtEqY5D2iRI&list=PLOzSzq9zCDu3L8z2SGfMFdTah0DM8k3bO',
+                'https://music.youtube.com/watch?v=xsk-GzE_4hM&list=PLOzSzq9zCDu3L8z2SGfMFdTah0DM8k3bO',
+                'https://music.youtube.com/watch?v=wQmBpTFMgdI&list=PLOzSzq9zCDu3L8z2SGfMFdTah0DM8k3bO'
+                'https://music.youtube.com/watch?v=6cpJMBDBRec',
+                'https://music.youtube.com/watch?v=ysLdynb5aK0&list=OLAK5uy_msN07WBaU1aTv17BWEyzJnYBhDFvqCcZk',
+                // Add more URLs as needed
+            ];
+            const randomIndex = Math.floor(Math.random() * songs.length);
+            window.location.href = songs[randomIndex];
+        }
+    </script>
+</head>
+<body onload="redirectToRandomSong()">
+    <p>Redirecting to a random YouTube Music song...</p>
+</body>
+</html>
